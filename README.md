@@ -2,6 +2,8 @@
 
 Interactive math & physics simulations in the browser. Vite + vanilla JS; three.js for 3D.
 
+**Play it: <https://tensoratelier.com/fun-sim/>** — part of [Tensor Atelier](https://tensoratelier.com).
+
 | Sim | File | What it shows |
 |---|---|---|
 | Fourier epicycles | `src/sims/fourier.js` | Upload an image or draw → edge path → DFT → rotating circles redraw it |
@@ -21,6 +23,8 @@ npm run dev        # http://localhost:8870  (or: dev start fun-sim)
 npm run build      # static site in dist/
 npm test           # node:test suite (tests/)
 ```
+
+Pushing to `main` deploys to GitHub Pages (`.github/workflows/pages.yml`, built with `--base=/fun-sim/`).
 
 ## Adding a simulation
 Create `src/sims/<id>.js` exporting `{ id, title, glyph, tag, blurb, mount(root) }`, where
