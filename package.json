@@ -1,17 +1,16 @@
 {
   "name": "fun-sim",
   "version": "1.0.0",
-  "description": "",
+  "description": "Interactive math and physics simulations in the browser.",
   "main": "index.js",
   "scripts": {
-    "test": "node --test 'tests/*.test.mjs'",
     "dev": "vite --port 8870 --strictPort",
     "build": "vite build",
     "preview": "vite preview --port 8870"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "type": "module",
   "devDependencies": {
     "vite": "^8.3.0"

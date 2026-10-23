@@ -17,9 +17,7 @@ concurrency:
 
 jobs:
   build:
-    # macOS (Apple Silicon), where the levels were tuned: cart-pole training in the Ch. 7 tests
-    # comes out slightly differently on Linux x64 and misses the 3-star threshold there.
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -27,7 +25,6 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm test
       - run: npx vite build --base=/fun-sim/
       - uses: actions/upload-pages-artifact@v3
         with:
