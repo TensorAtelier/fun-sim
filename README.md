@@ -29,9 +29,6 @@ Create `src/sims/<id>.js` exporting `{ id, title, glyph, tag, blurb, mount(root)
 `mount` builds its UI with the helpers in `src/ui.js` and returns a cleanup function.
 Then add it to `src/sims/index.js`.
 
-Entries with an `href` instead of `mount` are links out: they show on the home page and in the nav,
-and their old `#/<id>` route redirects there.
-
 ## Build a Net
 The Build a Net game started here and moved to its own repo on 2026-10-23:
 <https://github.com/TensorAtelier/build-a-net>, played at <https://tensoratelier.com/build-a-net/>.
